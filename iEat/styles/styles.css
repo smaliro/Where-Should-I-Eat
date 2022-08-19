@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 87.5%;
+}
+
+body {
+  background-color: #E8DFD5;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #333;
+}
+
+h1 {
+  font-family: "Clash Display", sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+.banner {
+  width: 100%;
+  padding: 1rem 2rem 0.1rem;
+  border-bottom: #C2B5A6 1.5px solid;
+}
+.banner ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner li:hover {
+  background-color: #C2B5A6;
+  padding: 0 0.2rem;
+}
+.banner a {
+  color: #333;
+}
+.banner a:hover {
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.wrapper {
+  text-align: center;
+  border: #C2B5A6 solid 1.5px;
+  padding: 5rem;
+}
+.wrapper h1 {
+  flex-shrink: 1;
+}
+.wrapper input {
+  border: 1.6px solid #C2B5A6;
+  border-radius: 0.1rem;
+  padding: 0.7rem 1.4rem;
+  width: 100%;
+  background-color: transparent;
+  color: #333;
+}
+.wrapper button {
+  padding: 0.7rem 1.4rem;
+  border: #E8DFD5 solid 1.5px;
+  border-radius: 0.4rem;
+  background-color: #C2B5A6;
+  cursor: pointer;
+  margin: 1rem 0;
+  color: #333;
+  font-weight: bold;
+}
+.wrapper button:hover {
+  box-shadow: 2px 2px 0 -5px #C2B5A6, 2px 2px #C2B5A6;
+}
+.wrapper small {
+  text-align: left;
+}
+.wrapper mark {
+  padding: 0.2rem 0.4rem;
+  background-color: #C2B5A6;
+  color: #333;
+}
+
+.input-wrapper {
+  text-align: left;
+}
+.input-wrapper label {
+  font-size: 0.8rem;
+}
+
+.suggest-wrapper {
+  padding: 2rem 0;
+  word-break: normal;
+}/*# sourceMappingURL=styles.css.map */

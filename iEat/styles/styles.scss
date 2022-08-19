@@ -1,0 +1,146 @@
+$color1: #333;
+$color2: #E8DFD5;
+$color3: #C2B5A6;
+
+@mixin btn1 {
+    padding: 0.7rem 1.4rem;
+    border: $color2 solid 1.5px;
+    border-radius: 0.4rem;
+    background-color: $color3;
+    cursor: pointer;
+}
+
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // outline: royalblue solid 1px;
+}
+
+html {
+    font-size: 87.5%;
+}
+
+body {
+    background-color: $color2;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color:$color1;
+}
+
+h1 {
+    font-family: 'Clash Display', sans-serif;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+small,
+.text_small {
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: $color1;
+}
+
+li {
+    list-style: none;
+}
+
+.banner {
+    width: 100%;
+    padding: 1rem 2rem 0.1rem;
+    border-bottom: $color3 1.5px solid;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    li:hover {
+        background-color: $color3;
+        padding: 0 0.2rem;
+    }
+
+    a {
+        color:$color1;
+    }
+
+    a:hover {
+        color:$color1;
+    }
+}
+
+.container {
+    @include center;
+    height: 90vh;
+}
+
+.wrapper {
+    text-align: center;
+    border: $color3 solid 1.5px;
+    padding: 5rem;
+
+    h1 {
+        flex-shrink: 1;
+    }
+
+    input {
+        border: 1.6px solid $color3;
+        border-radius: 0.1rem;
+        padding: 0.7rem 1.4rem;
+        width: 100%;
+        background-color: transparent;
+        color: $color1
+    }
+
+    button {
+        @include btn1;
+        margin: 1rem 0;
+        color: $color1;
+        font-weight: bold;
+    }
+
+    button:hover {
+        box-shadow: 2px 2px 0 -5px $color3,
+            2px 2px $color3;
+    }
+
+    small {
+        text-align: left;
+    }
+
+    mark {
+        padding: 0.2rem 0.4rem;
+        background-color: $color3;
+        color: $color1;
+    }
+}
+
+.input-wrapper {
+    text-align: left;
+
+    label {
+        font-size: 0.8rem;
+
+    }
+}
+
+.suggest-wrapper {
+    padding: 2rem 0;
+    word-break: normal;
+}
