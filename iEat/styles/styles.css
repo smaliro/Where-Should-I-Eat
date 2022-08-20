@@ -12,17 +12,13 @@ body {
   background-color: #E8DFD5;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.2;
   color: #333;
 }
 
 h1 {
   font-family: "Clash Display", sans-serif;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
+  font-size: 3.043rem;
 }
 
 small,
@@ -35,43 +31,21 @@ a {
   color: #333;
 }
 
-li {
-  list-style: none;
-}
-
-.banner {
-  width: 100%;
-  padding: 1rem 2rem 0.1rem;
-  border-bottom: #C2B5A6 1.5px solid;
-}
-.banner ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.banner li:hover {
-  background-color: #C2B5A6;
-  padding: 0 0.2rem;
-}
-.banner a {
-  color: #333;
-}
-.banner a:hover {
-  color: #333;
-}
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  margin: auto;
+  height: 100vh;
+  min-width: 50vw;
+  width: 100vw;
 }
 
 .wrapper {
   text-align: center;
   border: #C2B5A6 solid 1.5px;
+  border-radius: 2%;
   padding: 5rem;
 }
 .wrapper h1 {
@@ -80,6 +54,7 @@ li {
 .wrapper input {
   border: 1.6px solid #C2B5A6;
   border-radius: 0.1rem;
+  margin: 0.25rem 0;
   padding: 0.7rem 1.4rem;
   width: 100%;
   background-color: transparent;
@@ -117,4 +92,25 @@ li {
 .suggest-wrapper {
   padding: 2rem 0;
   word-break: normal;
+}
+
+.credits-wrapper {
+  padding: 1rem 2.5rem;
+  text-align: center;
+}
+.credits-wrapper a {
+  text-decoration: underline;
+}
+.credits-wrapper a:hover {
+  background-color: #C2B5A6;
+  padding: 0 0.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    border: none;
+  }
+  .wrapper h1 {
+    font-size: 2.4rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

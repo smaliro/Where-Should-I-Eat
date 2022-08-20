@@ -1,19 +1,20 @@
 const searchButton = document.getElementById('search-btn');
-const restaurant = document.querySelector('suggest-box')
+const restaurant = document.getElementById('suggest-box')
+// .innerHTML = Math.random();
+// const restaurant = document.querySelector('suggest-box');
 
 // event listeners
 
 searchButton.addEventListener('click', getRestaurant);
 
 //get restaurant by location
-
 async function getRestaurant() {
     let searchInputText = document.getElementById('input-box').value.trim();
 
     searchButton.classList.add("searching");
     searchButton.innerText = "Searching...";
 
-    fetch('https://wyre-data.p.rapidapi.com/restaurants/town/clowne',
+    fetch(`https://wyre-data.p.rapidapi.com/restaurants/town/${searchInputText}`,
         {
             method: 'GET',
             headers: {
@@ -24,10 +25,15 @@ async function getRestaurant() {
     )
         .then(response => response.json())
         .then(data => {
+            // console.log(data.length);
+            // console.log(Math.floor(Math.random() * data.length));
             console.log(data);
-            restaurant.innerText = data.BusinessName;
+            restaurant.innerText = data[Math.floor(Math.random() * data.length)].BusinessName;
             searchButton.innerText = "Search";
             searchButton.classList.remove("searching");
+        })
+        .catch(function (err) {
+            console.warn('Something went wrong.', err);
         })
         ;
 }
